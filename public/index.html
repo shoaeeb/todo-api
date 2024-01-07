@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-center mt-5"
+    >
+      <h3>Task Manager</h3>
+    </nav>
+    <div class="container mt-3">
+      <form class="col-6 mx-auto add-task-form">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="eg. Task"
+          id="task"
+          name="name"
+        />
+        <button class="btn btn-primary mt-3" id="addTask">Add Task</button>
+      </form>
+      <div class="success-message col-6 mx-auto mt-2 hidden">
+        <p class="text-success text-center fs-5">Added Task</p>
+      </div>
+      <div class="error-message col-6 mx-auto mt-2 hidden">
+        <p class="text-danger text-center fs-5">Error</p>
+      </div>
+      <div class="col-6 mx-auto mt-2 hidden">
+        <p class="text-success text-center fs-5">Task Deleted</p>
+      </div>
+      <div class="loading-message col-6 mx-auto mt-2 hidden">
+        <p class="text-success text-center fs-5">Loading ....</p>
+      </div>
+      <div class="general-message col-6 mx-auto mt-2 hidden">
+        <p class="text-warning text-center fs-5">
+          No Task Please Add A New Task ....
+        </p>
+      </div>
+      <div class="col-6 mx-auto mt-2">
+        <ul class="list-unstyled all-tasks">
+          <!-- <li class="row align-items-center mt-2 mb-2">
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="flexCheckDefault1"
+              />
+            </div>
+            <div class="col-8">
+              <label class="form-check-label" for="flexCheckDefault1"
+                >Checkbox 1</label
+              >
+            </div>
+            <div class="col-3">
+              <button class="btn btn-primary">Edit</button>
+            </div>
+          </li>
+          <li class="row align-items-center mt-2 mb-2">
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="flexCheckDefault2"
+              />
+            </div>
+            <div class="col-8">
+              <label class="form-check-label" for="flexCheckDefault2"
+                >Checkbox 2</label
+              >
+            </div>
+            <div class="col-3">
+              <button class="btn btn-primary">Edit</button>
+            </div>
+          </li> -->
+          <!-- Add more list items as needed -->
+        </ul>
+      </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>
